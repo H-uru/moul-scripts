@@ -39,12 +39,13 @@
 #       Mead, WA   99021
 # 
 # *==LICENSE==*/
-#
+
 # sdl for private chat channel
 
 STATEDESC xChatChannelRegion
 {
 	VERSION 1	
+
 	VAR INT		intSDLChatMembers[8] 
 }
 

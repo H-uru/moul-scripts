@@ -39,28 +39,14 @@
 #       Mead, WA   99021
 # 
 # *==LICENSE==*/
-#==============================================================
-# READ:	When modifying an SDL record, do *not* modify the
-#	existing record. You must copy and paste a new version
-#	below the current one and make your changes there.
-#==============================================================
 
 STATEDESC PhilRelto
 {
     VERSION 1
 
     VAR BOOL	philLibraryDoorClosed[1]    	DEFAULT=1
-    VAR BOOL    philBlindsClosed[1] 		DEFAULT=1
-    VAR BOOL    philDRCVest[1]      		DEFAULT=1
-}
-
-STATEDESC PhilRelto
-{
-    VERSION 2
-
-    VAR BOOL	philLibraryDoorClosed[1]    	DEFAULT=1
-    VAR BOOL    philBlindsClosed[1] 		DEFAULT=1
-    VAR BOOL    philDRCVest[1]      		DEFAULT=0
+    VAR BOOL    philBlindsClosed[1] 		    DEFAULT=1
+    VAR BOOL    philDRCVest[1]      		    DEFAULT=0
 
     VAR BOOL    philCalendarSpark10[1]      	DEFAULT=0
 }

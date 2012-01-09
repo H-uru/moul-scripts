@@ -39,8 +39,10 @@
 #       Mead, WA   99021
 # 
 # *==LICENSE==*/
+
 STATEDESC xStateToggler
 {
 	VERSION 1
+
 	VAR INT		enabled[1]
 }

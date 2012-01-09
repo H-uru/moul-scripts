@@ -39,11 +39,12 @@
 #       Mead, WA   99021
 # 
 # *==LICENSE==*/
-#
+
 # State Description Language for a x
 
 STATEDESC xConcentration
 {
 	VERSION 1
+
 	VAR INT		puz[]
 }

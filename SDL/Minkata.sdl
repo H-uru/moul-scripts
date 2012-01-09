@@ -39,12 +39,6 @@
 #       Mead, WA   99021
 # 
 # *==LICENSE==*/
-#==============================================================
-# READ:	When modifying an SDL record, do *not* modify the
-#	existing record. You must copy and paste a new version
-#	below the current one and make your changes there.
-#==============================================================
-
 
 #
 # State Description Language for Minkata
@@ -53,85 +47,7 @@ STATEDESC Minkata
 {
 	VERSION 1
 
-# Boolean variables
-    VAR BOOL    minkHikingBootsVis[1]              DEFAULT=0 DEFAULTOPTION=VAULT
-
-
-}
-
-STATEDESC Minkata
-{
-	VERSION 2
-
-# Boolean variables
-    VAR BOOL    minkHikingBootsVis[1]              DEFAULT=0 DEFAULTOPTION=VAULT
-    VAR BOOL    minkIsDayTime[1]                   DEFAULT=1 DEFAULTOPTION=hidden
-
-}
-
-STATEDESC Minkata
-{
-	VERSION 3
-
-# Boolean variables
-    VAR BOOL    minkHikingBootsVis[1]              DEFAULT=0 DEFAULTOPTION=VAULT
-    VAR BOOL    minkIsDayTime[1]                   DEFAULT=1 DEFAULTOPTION=hidden
-
-    VAR BOOL    minkSymbolPart01[1]                DEFAULT=0 DEFAULTOPTION=hidden
-    VAR BOOL    minkSymbolPart02[1]                DEFAULT=0 DEFAULTOPTION=hidden
-    VAR BOOL    minkSymbolPart03[1]                DEFAULT=0 DEFAULTOPTION=hidden
-    VAR BOOL    minkSymbolPart04[1]                DEFAULT=0 DEFAULTOPTION=hidden
-    VAR BOOL    minkSymbolPart05[1]                DEFAULT=0 DEFAULTOPTION=hidden
-
-}
-
-STATEDESC Minkata
-{
-	VERSION 4
-
-# Boolean variables
-    VAR BOOL    minkHikingBootsVis[1]              DEFAULT=0 DEFAULTOPTION=VAULT
-    VAR BOOL    minkIsDayTime[1]                   DEFAULT=1 DEFAULTOPTION=hidden
-
-    VAR BOOL    minkSymbolPart01[1]                DEFAULT=0 DEFAULTOPTION=hidden
-    VAR BOOL    minkSymbolPart02[1]                DEFAULT=0 DEFAULTOPTION=hidden
-    VAR BOOL    minkSymbolPart03[1]                DEFAULT=0 DEFAULTOPTION=hidden
-    VAR BOOL    minkSymbolPart04[1]                DEFAULT=0 DEFAULTOPTION=hidden
-    VAR BOOL    minkSymbolPart05[1]                DEFAULT=0 DEFAULTOPTION=hidden
-
-    VAR BOOL    minkCalendarSpark06[1]    	   DEFAULT=0 DEFAULTOPTION=VAULT
-
-}
-
-STATEDESC Minkata
-{
-	VERSION 5
-
-# Boolean variables
-    VAR BOOL    minkHikingBootsVis[1]              DEFAULT=0 DEFAULTOPTION=VAULT
-    VAR BOOL    minkIsDayTime[1]                   DEFAULT=1 DEFAULTOPTION=hidden
-
-    VAR BOOL    minkSymbolPart01[1]                DEFAULT=0 DEFAULTOPTION=hidden
-    VAR BOOL    minkSymbolPart02[1]                DEFAULT=0 DEFAULTOPTION=hidden
-    VAR BOOL    minkSymbolPart03[1]                DEFAULT=0 DEFAULTOPTION=hidden
-    VAR BOOL    minkSymbolPart04[1]                DEFAULT=0 DEFAULTOPTION=hidden
-    VAR BOOL    minkSymbolPart05[1]                DEFAULT=0 DEFAULTOPTION=hidden
-
-    VAR BOOL    minkSymbolShow01[1]                DEFAULT=0 DEFAULTOPTION=hidden
-    VAR BOOL    minkSymbolShow02[1]                DEFAULT=0 DEFAULTOPTION=hidden
-    VAR BOOL    minkSymbolShow03[1]                DEFAULT=0 DEFAULTOPTION=hidden
-    VAR BOOL    minkSymbolShow04[1]                DEFAULT=0 DEFAULTOPTION=hidden
-    VAR BOOL    minkSymbolShow05[1]                DEFAULT=0 DEFAULTOPTION=hidden
-
-    VAR BOOL    minkCalendarSpark06[1]    	   DEFAULT=0 DEFAULTOPTION=VAULT
-
-}
-
-STATEDESC Minkata
-{
-	VERSION 6
-
-# Boolean variables
+    # Boolean variables
     VAR BOOL    minkHikingBootsVis[1]              DEFAULT=0 DEFAULTOPTION=VAULT
     VAR BOOL    minkIsDayTime[1]                   DEFAULT=1 DEFAULTOPTION=hidden
 
@@ -154,5 +70,4 @@ STATEDESC Minkata
     VAR BOOL    minkSymbolTouch05[1]               DEFAULT=0 DEFAULTOPTION=hidden
 
     VAR BOOL    minkCalendarSpark06[1]    	       DEFAULT=0 DEFAULTOPTION=VAULT
-
 }

@@ -39,30 +39,27 @@
 #       Mead, WA   99021
 # 
 # *==LICENSE==*/
-#
-# sdl for ayoheek
 
 STATEDESC nb01RPSGame
 {
 	VERSION 1	
-# game variables
-	VAR BOOL	boolSDLSuddenDeath[1] DEFAULT=(0)
-	VAR INT		intSDLRankPot[1] DEFAULT=(0)	
-	VAR INT		intSDLGameWinner[1] DEFAULT=(0)
-	VAR INT		intSDLState[1] DEFAULT=(0)
-	VAR INT		intSDLPlayers[5] 
-	VAR INT		intSDLSuddenDeathPlayers[5] 
-	VAR INT 	intSDLRoundWinnerPlayers[5] 
+    
+    # game variables
+	VAR BOOL    boolSDLSuddenDeath[1]           DEFAULT=(0)
+	VAR INT     intSDLRankPot[1]                DEFAULT=(0)	
+	VAR INT     intSDLGameWinner[1]             DEFAULT=(0)
+	VAR INT     intSDLState[1]                  DEFAULT=(0)
+	VAR INT     intSDLPlayers[5] 
+	VAR INT     intSDLSuddenDeathPlayers[5] 
+	VAR INT     intSDLRoundWinnerPlayers[5] 
 
-# current player variables	
-	VAR INT		intSDLPlayerNumRocks[5]
-	VAR INT		intSDLPlayerNumPaper[5]
-	VAR INT		intSDLPlayerNumScissors[5]
-	VAR INT		intSDLPlayerRoundsWon[5]
-	VAR INT		intSDLPlayerCurRoundScore[5]
-	VAR INT		intSDLPlayerCurSelection[5]
-	VAR INT		intSDLPlayerCurRoundScore[5]
-#	VAR INT		intSDLPlayerRank[5]
+    # current player variables	
+	VAR INT     intSDLPlayerNumRocks[5]
+	VAR INT     intSDLPlayerNumPaper[5]
+	VAR INT     intSDLPlayerNumScissors[5]
+	VAR INT     intSDLPlayerRoundsWon[5]
+	VAR INT     intSDLPlayerCurRoundScore[5]
+	VAR INT     intSDLPlayerCurSelection[5]
+	VAR INT     intSDLPlayerCurRoundScore[5]
+#	VAR INT     intSDLPlayerRank[5]
 }
-
-

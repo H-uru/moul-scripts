@@ -39,12 +39,13 @@
 #       Mead, WA   99021
 # 
 # *==LICENSE==*/
-#
+
 # State Description Language for a powered button lever or switch
 #
 
 STATEDESC xButtonLeverSwitchPowered
 {
 	VERSION 1
+
 	VAR INT		enabled[1]
 }

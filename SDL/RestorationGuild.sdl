@@ -39,38 +39,28 @@
 #       Mead, WA   99021
 # 
 # *==LICENSE==*/
-#==============================================================
-# READ:	When modifying an SDL record, do *not* modify the
-#	existing record. You must copy and paste a new version
-#	below the current one and make your changes there.
-#==============================================================
-
 
 #
 # State Description Language for the GreatZero
 
 STATEDESC RestorationGuild
 {
-	VERSION 3
+	VERSION 1
 
-    VAR STRING32 rstrDRCImagerInbox[1]
-    VAR BOOL    rstrErcanaLinkingBookVis[1]   DEFAULT=0 
+    VAR STRING32    rstrDRCImagerInbox[1]
+    VAR BOOL        rstrErcanaLinkingBookVis[1] DEFAULT=0 
 
-## Ball Room puzzle
-    VAR BOOL    boolFirstTimeHere[1]   DEFAULT=1 
-    VAR BOOL    boolSwitchAUp[1]   DEFAULT=1 
-    VAR BOOL    boolBridgeExtended[1]   DEFAULT=0
-    VAR BOOL    boolShellRoomDoorOpen[1] DEFAULT=0
-    VAR BOOL    boolLadderRevealed[1]   DEFAULT=0 
-    VAR BOOL    boolBallAtTop[1]   DEFAULT=0 
-    VAR INT     TimeEnteredPatienceZone[1]   DEFAULT = 0
-    VAR BOOL    boolTreeDayLights[1]   DEFAULT=0
+    ## Ball Room puzzle
+    VAR BOOL        boolFirstTimeHere[1]        DEFAULT=1 
+    VAR BOOL        boolSwitchAUp[1]            DEFAULT=1 
+    VAR BOOL        boolBridgeExtended[1]       DEFAULT=0
+    VAR BOOL        boolShellRoomDoorOpen[1]    DEFAULT=0
+    VAR BOOL        boolLadderRevealed[1]       DEFAULT=0 
+    VAR BOOL        boolBallAtTop[1]            DEFAULT=0 
+    VAR INT         TimeEnteredPatienceZone[1]  DEFAULT=0
+    VAR BOOL        boolTreeDayLights[1]        DEFAULT=0
     
     
-## Reward Clothing
-VAR BOOL    rstrFleeceVis[1]    DEFAULT=1 DEFAULTOPTION=VAULT
-
-
-
-
+    ## Reward Clothing
+    VAR BOOL        rstrFleeceVis[1]            DEFAULT=1   DEFAULTOPTION=VAULT
 }
