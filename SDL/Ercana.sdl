@@ -126,9 +126,9 @@ STATEDESC Ercana
 
     # Boolean variables
     VAR BOOL    ercaCalendarSpark07[1]    	    DEFAULT=0 DEFAULTOPTION=VAULT
-    VAR BOOL    ercaYeeshaPagePlantsVis[1]    	DEFAULT=0 DEFAULTOPTION=VAULT
-    VAR BOOL    ercaYeeshaPageFiremarblesVis[1] DEFAULT=0 DEFAULTOPTION=VAULT
-    VAR BOOL    ercaBackpackVis[1]    		    DEFAULT=0 DEFAULTOPTION=VAULT
+    VAR BOOL    ercaYeeshaPagePlantsVis[1]    	DEFAULT=1 DEFAULTOPTION=VAULT
+    VAR BOOL    ercaYeeshaPageFiremarblesVis[1] DEFAULT=1 DEFAULTOPTION=VAULT
+    VAR BOOL    ercaBackpackVis[1]    		    DEFAULT=1 DEFAULTOPTION=VAULT
 
     # Save Cloths
     VAR BOOL	ercaGotSaveCloth1[1]    DEFAULT=0 DISPLAYOPTION=red

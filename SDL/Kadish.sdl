@@ -64,13 +64,13 @@ STATEDESC Kadish
     VAR BOOL    kdshYeeshaVaultLinkBook[1]      DEFAULT=1   DEFAULTOPTION=VAULT
     VAR BOOL    kdshNexusStationVis[1]          DEFAULT=1   DEFAULTOPTION=VAULT
 
-    VAR BOOL    kdshHelmetVis[1]                DEFAULT=0   DEFAULTOPTION=VAULT
+    VAR BOOL    kdshHelmetVis[1]                DEFAULT=1   DEFAULTOPTION=VAULT
     VAR BOOL    kdshMystBookVis[1]              DEFAULT=0   DEFAULTOPTION=VAULT
 
     VAR BOOL    kdshCalendarSpark02[1]          DEFAULT=0   DEFAULTOPTION=VAULT
 
-    VAR BOOL    kdshYeeshaPageButterfliesVis[1] DEFAULT=0   DEFAULTOPTION=VAULT
-    VAR BOOL    kdshYeeshaPageTreeVis[1]        DEFAULT=0   DEFAULTOPTION=VAULT
+    VAR BOOL    kdshYeeshaPageButterfliesVis[1] DEFAULT=1   DEFAULTOPTION=VAULT
+    VAR BOOL    kdshYeeshaPageTreeVis[1]        DEFAULT=1   DEFAULTOPTION=VAULT
 
     VAR BOOL    kdshTreasureBook11Vis[1]        DEFAULT=1   DEFAULTOPTION=VAULT
 
@@ -114,10 +114,10 @@ STATEDESC Kadish
     #############
     # Glow In The Dark Puzzle
     #############
-    VAR BOOL    RoofClosed[1]                   DEFAULT = 1
-    VAR BOOL    GlowCharged[1]                  DEFAULT = 0
-    VAR INT     TimeOpened[1]                   DEFAULT = 0
-    VAR BOOL    GlowInTheDarkSolved[1]          DEFAULT = 0
+    VAR BOOL    RoofClosed[1]                   DEFAULT=1
+    VAR BOOL    GlowCharged[1]                  DEFAULT=0
+    VAR INT     TimeOpened[1]                   DEFAULT=0
+    VAR BOOL    GlowInTheDarkSolved[1]          DEFAULT=0
 
     #############
     # Pillar Puzzle
@@ -132,7 +132,7 @@ STATEDESC Kadish
 	VAR BOOL    PillarsResetting[1]             DEFAULT=0
     
     VAR BOOL    SecretDoorClosed[1]             DEFAULT=1
-    VAR BOOL    PillarRoomSolved[1]             DEFAULT = 0
+    VAR BOOL    PillarRoomSolved[1]             DEFAULT=0
 
     #############
     # Vault Puzzle

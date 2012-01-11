@@ -48,7 +48,7 @@ STATEDESC RestorationGuild
 	VERSION 1
 
     VAR STRING32    rstrDRCImagerInbox[1]
-    VAR BOOL        rstrErcanaLinkingBookVis[1] DEFAULT=0 
+    VAR BOOL        rstrErcanaLinkingBookVis[1] DEFAULT=1 
 
     ## Ball Room puzzle
     VAR BOOL        boolFirstTimeHere[1]        DEFAULT=1 

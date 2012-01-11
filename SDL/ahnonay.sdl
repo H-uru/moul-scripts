@@ -58,7 +58,7 @@ STATEDESC Ahnonay
     VAR INT     ahnyQuabsLastUpdate[1]      DEFAULT=0  DISPLAYOPTION=hidden
 
     ## SPHERE 2 SDLs ##
-    VAR BOOL    ahnyYeeshaPageStormVis[1]   DEFAULT=0  DEFAULTOPTION=VAULT
+    VAR BOOL    ahnyYeeshaPageStormVis[1]   DEFAULT=1  DEFAULTOPTION=VAULT
     VAR BYTE    ahnySphere02Occupied[25]    DEFAULT=0  DISPLAYOPTION=hidden
     VAR BYTE    ahnySphere02Trees[15]       DEFAULT=1  DISPLAYOPTION=hidden
 

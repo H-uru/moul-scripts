@@ -58,7 +58,7 @@ STATEDESC Cleft
     VAR BOOL    clftJourneyCloth07Vis[1]        DEFAULT=1 DEFAULTOPTION=VAULT
     VAR BOOL    clftZandiShirtVis[1]            DEFAULT=1 DEFAULTOPTION=VAULT
     VAR BOOL    clftAtrusGogglesVis[1]          DEFAULT=1 DEFAULTOPTION=VAULT
-    VAR BOOL    clftYeeshaPage19Vis[1]          DEFAULT=0 DISPLAYOPTION=VAULT
+    VAR BOOL    clftYeeshaPage19Vis[1]          DEFAULT=1 DISPLAYOPTION=VAULT
 
     # Age Mechanics
     VAR BOOL    clftAgeSDLWindmillLocked[1]     DEFAULT=1 DISPLAYOPTION=red

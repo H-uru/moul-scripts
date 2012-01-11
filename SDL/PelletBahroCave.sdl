@@ -49,28 +49,6 @@ STATEDESC PelletBahroCave
 
     ## Age Mechanics ##
     VAR INT     bhroGotPellet[1]        DEFAULT=0 DISPLAYOPTION=red
-}
-
-
-STATEDESC PelletBahroCave
-{
-	VERSION 1
-
-    ## Age Mechanics ##
-    VAR INT     bhroGotPellet[1]        DEFAULT=0 DISPLAYOPTION=red
-    VAR BYTE    plltImagerSolutionN[1]  DEFAULT=0 DISPLAYOPTION=red
-    VAR BYTE    plltImagerSolutionE[1]  DEFAULT=0 DISPLAYOPTION=red
-    VAR BYTE    plltImagerSolutionS[1]  DEFAULT=0 DISPLAYOPTION=red
-    VAR BYTE    plltImagerSolutionW[1]  DEFAULT=0 DISPLAYOPTION=red
-
-}
-
-STATEDESC PelletBahroCave
-{
-	VERSION 1
-
-    ## Age Mechanics ##
-    VAR INT     bhroGotPellet[1]        DEFAULT=0 DISPLAYOPTION=red
     VAR BYTE    plltImagerSolutionN[1]  DEFAULT=9 DISPLAYOPTION=red
     VAR BYTE    plltImagerSolutionE[1]  DEFAULT=9 DISPLAYOPTION=red
     VAR BYTE    plltImagerSolutionS[1]  DEFAULT=9 DISPLAYOPTION=red

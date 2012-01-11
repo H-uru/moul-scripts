@@ -67,7 +67,7 @@ STATEDESC Teledahn
 
     ## Age Mechanics ##
     # Power Tower
-    VAR BYTE     tldnPwrTwrPumpCount[1]         DEFAULT=0 DISPLAYOPTION=red # 0-3, 3 = tower raised
+    VAR BYTE    tldnPwrTwrPumpCount[1]          DEFAULT=0 DISPLAYOPTION=red # 0-3, 3 = tower raised
     VAR BOOL    tldnMainPowerOn[1]              DEFAULT=0 DISPLAYOPTION=red
     VAR BOOL    tldnWorkroomShaftOn[1]          DEFAULT=0 DISPLAYOPTION=red
     VAR BOOL    tldnWorkroomPowerOn[1]          DEFAULT=0 DISPLAYOPTION=hidden DISPLAYOPTION=red
@@ -120,7 +120,7 @@ STATEDESC Teledahn
 
     # SlaveOffice
     VAR BOOL    tldnSecretDoorOpen[1]       DEFAULT=0 DISPLAYOPTION=red
-    VAR BOOL    tldnTieDyeVis[1]            DEFAULT=0 DEFAULTOPTION=VAULT
+    VAR BOOL    tldnTieDyeVis[1]            DEFAULT=1 DEFAULTOPTION=VAULT
 
     # Vapor Miner Hits
     VAR BOOL    tldnRockAVaporHit[1]        DEFAULT=0 DISPLAYOPTION=red

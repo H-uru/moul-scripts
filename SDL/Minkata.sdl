@@ -48,7 +48,7 @@ STATEDESC Minkata
 	VERSION 1
 
     # Boolean variables
-    VAR BOOL    minkHikingBootsVis[1]              DEFAULT=0 DEFAULTOPTION=VAULT
+    VAR BOOL    minkHikingBootsVis[1]              DEFAULT=1 DEFAULTOPTION=VAULT
     VAR BOOL    minkIsDayTime[1]                   DEFAULT=1 DEFAULTOPTION=hidden
 
     VAR BOOL    minkSymbolPart01[1]                DEFAULT=0 DEFAULTOPTION=hidden

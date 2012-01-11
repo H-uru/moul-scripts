@@ -45,10 +45,10 @@ STATEDESC nb01RPSGame
 	VERSION 1	
     
     # game variables
-	VAR BOOL    boolSDLSuddenDeath[1]           DEFAULT=(0)
-	VAR INT     intSDLRankPot[1]                DEFAULT=(0)	
-	VAR INT     intSDLGameWinner[1]             DEFAULT=(0)
-	VAR INT     intSDLState[1]                  DEFAULT=(0)
+	VAR BOOL    boolSDLSuddenDeath[1]           DEFAULT=0
+	VAR INT     intSDLRankPot[1]                DEFAULT=0	
+	VAR INT     intSDLGameWinner[1]             DEFAULT=0
+	VAR INT     intSDLState[1]                  DEFAULT=0
 	VAR INT     intSDLPlayers[5] 
 	VAR INT     intSDLSuddenDeathPlayers[5] 
 	VAR INT     intSDLRoundWinnerPlayers[5] 

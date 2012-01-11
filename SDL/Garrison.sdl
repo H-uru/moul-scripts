@@ -101,7 +101,7 @@ STATEDESC Garrison
     VAR BOOL    grsnPrisonMattress02vis[1]  DEFAULT=0 DEFAULTOPTION=VAULT
     VAR BOOL    grsnPrisonWindow01vis[1]    DEFAULT=0 DEFAULTOPTION=VAULT
     VAR BOOL    grsnPrisonWindow02vis[1]    DEFAULT=0 DEFAULTOPTION=VAULT
-	VAR BOOL    grsnYeeshaPage02Vis[1]      DEFAULT=0 DEFAULTOPTION=VAULT
+    VAR BOOL    grsnYeeshaPage02Vis[1]      DEFAULT=1 DEFAULTOPTION=VAULT
 
     # climbing wall variables
 	VAR INT     nChairOccupant[1]

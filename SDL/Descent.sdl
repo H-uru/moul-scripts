@@ -48,8 +48,8 @@ STATEDESC Descent
 	VERSION 1
 
     # Boolean variables
-    VAR BOOL    dsntGZMarkerVis[1]                  DEFAULT=0   DEFAULTOPTION=VAULT
-    VAR BOOL    dsntYeeshaPageMusicPlayerVis[1]     DEFAULT=0   DEFAULTOPTION=VAULT
+    VAR BOOL    dsntGZMarkerVis[1]                  DEFAULT=1   DEFAULTOPTION=VAULT
+    VAR BOOL    dsntYeeshaPageMusicPlayerVis[1]     DEFAULT=1   DEFAULTOPTION=VAULT
     VAR BOOL    dsntCalendarSpark05[1]              DEFAULT=0   DEFAULTOPTION=VAULT
     VAR BYTE    dsntKILightFunc[1]                  DEFAULT=0   DEFAULTOPTION=VAULT
 }

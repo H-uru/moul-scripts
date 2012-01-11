@@ -46,7 +46,7 @@ STATEDESC PhilRelto
 
     VAR BOOL	philLibraryDoorClosed[1]    	DEFAULT=1
     VAR BOOL    philBlindsClosed[1] 		    DEFAULT=1
-    VAR BOOL    philDRCVest[1]      		    DEFAULT=0
+    VAR BOOL    philDRCVest[1]      		    DEFAULT=1
 
     VAR BOOL    philCalendarSpark10[1]      	DEFAULT=0
 }

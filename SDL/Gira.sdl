@@ -40,8 +40,6 @@
 # 
 # *==LICENSE==*/
 
-#
-# State Description Language for Gira
 
 # State Description Language for Gira
 
@@ -70,7 +68,7 @@ STATEDESC Gira
     VAR BOOL	giraSteamvent05Open[1]      DEFAULT=1 DEFAULTOPTION=VAULT
     VAR BOOL	giraSteamvent06Open[1]      DEFAULT=1 DEFAULTOPTION=VAULT
     VAR BOOL    giraDoorOpen[1]	    	    DEFAULT=0 DEFAULTOPTION=VAULT
-    VAR BOOL    giraPithHelmetVis[1]	    DEFAULT=0 DEFAULTOPTION=VAULT
+    VAR BOOL    giraPithHelmetVis[1]	    DEFAULT=1 DEFAULTOPTION=VAULT
     VAR BOOL    giraNexusStationVis[1]	    DEFAULT=1 DEFAULTOPTION=VAULT
 
     VAR BOOL    giraCalendarSpark03[1]      DEFAULT=0 DEFAULTOPTION=VAULT

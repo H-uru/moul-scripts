@@ -45,5 +45,5 @@ STATEDESC SpyRoom
     VERSION 1
     
     ## Age Mechanics
-    VAR BOOL    SpyRmTakotahMeetingVis[1]   DEFAULT=0
+    VAR BOOL    SpyRmTakotahMeetingVis[1]   DEFAULT=1
 }

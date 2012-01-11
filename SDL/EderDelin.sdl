@@ -48,9 +48,9 @@ STATEDESC EderDelin
 	VERSION 1
 
     ## Vis items
-    VAR BOOL        dlnYeeshaPage21Vis[1]           DEFAULT=0       DEFAULTOPTION=VAULT
+    VAR BOOL        dlnYeeshaPage21Vis[1]           DEFAULT=1       DEFAULTOPTION=VAULT
     VAR BOOL        dlnWinterVis[1]                 DEFAULT=0       DEFAULTOPTION=VAULT
-    VAR BOOL        dlnYeeshaPageBenchVis[1]        DEFAULT=0       DEFAULTOPTION=VAULT
+    VAR BOOL        dlnYeeshaPageBenchVis[1]        DEFAULT=1       DEFAULTOPTION=VAULT
 
     ## Blue Spiral stuff
     VAR STRING32    dlnBlueSpiralSolution[1]                        DEFAULTOPTION=hidden
