@@ -39,17 +39,17 @@
 #       Mead, WA   99021
 # 
 # *==LICENSE==*/
-#
+
 # State Description Language for power tower periscope
 
 STATEDESC tldnPwrTwrPeriscope
 {
-	VERSION 6
+	VERSION 1
     
 	VAR FLOAT	scopeSpdLeft[1]
 	VAR FLOAT	scopeSpdUp[1]
 	VAR INT		scopeAtTop[1]
 	VAR INT		scopeAtBtm[1]
-	VAR BOOL		boolOperated[1]
+	VAR BOOL	boolOperated[1]
 	VAR INT		OperatorID[1]
 }

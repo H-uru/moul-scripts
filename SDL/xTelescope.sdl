@@ -44,7 +44,8 @@
 
 STATEDESC xTelescope
 {
-	VERSION 3
+	VERSION 1
+
 	VAR INT		boolOperated[1]
 	VAR INT		OperatorID[1]
 }

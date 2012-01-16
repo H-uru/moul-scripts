@@ -39,8 +39,10 @@
 #       Mead, WA   99021
 # 
 # *==LICENSE==*/
+
 STATEDESC xHighLevelStarTrekDoor
 {
 	VERSION 1
+
 	VAR INT    DoorState[1]    DEFAULT=0
 }

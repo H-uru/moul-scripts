@@ -39,12 +39,13 @@
 #       Mead, WA   99021
 # 
 # *==LICENSE==*/
-#
+
 # State Description Language for a tldnWRCCBrain
 
 STATEDESC tldnWRCCBrain
 {
-	VERSION 4
+	VERSION 1
+
 	VAR BOOL		boolOperated[1]
 	VAR INT		OperatorID[1]    
 }

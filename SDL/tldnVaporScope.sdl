@@ -39,13 +39,14 @@
 #       Mead, WA   99021
 # 
 # *==LICENSE==*/
-#
+
 # State Description Language for the Vapor Miner Scope thingy
 
 STATEDESC tldnVaporScope
 {
-	VERSION 5
-	VAR BOOL		boolOperated[1]
+	VERSION 1
+
+	VAR BOOL	boolOperated[1]
 	VAR INT		OperatorID[1]
 	VAR INT		scopeAtTop[1]
 	VAR INT		scopeAtBottom[1]

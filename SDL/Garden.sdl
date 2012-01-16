@@ -39,24 +39,22 @@
 #       Mead, WA   99021
 # 
 # *==LICENSE==*/
-#
+
 # State Description Language for the Garden
 
 STATEDESC Garden
 {
-	VERSION 8
+	VERSION 1
 
-# Boolean variables
-    VAR BOOL    kemoJourneySymbolVis[1]    DEFAULT=1 DEFAULTOPTION=VAULT
-    VAR BOOL    kemoYeeshaPage03Vis[1]    DEFAULT=1 DEFAULTOPTION=VAULT
+    # Boolean variables
+    VAR BOOL    kemoJourneySymbolVis[1]     DEFAULT=1 DEFAULTOPTION=VAULT
+    VAR BOOL    kemoYeeshaPage03Vis[1]      DEFAULT=1 DEFAULTOPTION=VAULT
     VAR BOOL    kemoTreasureBook04Vis[1]    DEFAULT=1 DEFAULTOPTION=VAULT
     VAR BOOL    kemoJourneyCloth01Vis[1]    DEFAULT=1 DEFAULTOPTION=VAULT
     VAR BOOL    kemoJourneyCloth02Vis[1]    DEFAULT=1 DEFAULTOPTION=VAULT
     VAR BOOL    kemoJourneyCloth03Vis[1]    DEFAULT=1 DEFAULTOPTION=VAULT
     VAR BOOL    kemoJourneyCloth04Vis[1]    DEFAULT=1 DEFAULTOPTION=VAULT
 
-    VAR BOOL    kemoGateClosed[1]   DEFAULT=1
-    VAR BOOL    gardenStormRunning[1]   DEFAULT=0 DEFAULTOPTION=VAULT
-
-
+    VAR BOOL    kemoGateClosed[1]           DEFAULT=1
+    VAR BOOL    gardenStormRunning[1]       DEFAULT=0 DEFAULTOPTION=VAULT
 }

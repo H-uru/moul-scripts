@@ -39,13 +39,14 @@
 #       Mead, WA   99021
 # 
 # *==LICENSE==*/
-#
+
 # State Description Language for a 2-position lever
 #
 
 STATEDESC xPoweredLightSwitch
 {
 	VERSION 1
+
 	VAR INT		source[1]
 	VAR INT		switch[1]
 }
