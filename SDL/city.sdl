@@ -90,17 +90,17 @@ STATEDESC city
     VAR BOOL    islmTreasureBook06Vis[1]                DEFAULT=1 DEFAULTOPTION=VAULT
     VAR BOOL    islmTreasureBook08Vis[1]                DEFAULT=1 DEFAULTOPTION=VAULT   # links into Garrison Prison
     VAR BOOL    islmGuildHallConstructionVis[1]         DEFAULT=0 DEFAULTOPTION=VAULT
-    VAR BOOL    islmDRCTentVis[1]                       DEFAULT=0 DEFAULTOPTION=VAULT
-    VAR BOOL    islmPlayerMap01Vis[1]                   DEFAULT=0 DEFAULTOPTION=VAULT
+    VAR BOOL    islmDRCTentVis[1]                       DEFAULT=1 DEFAULTOPTION=VAULT
+    VAR BOOL    islmPlayerMap01Vis[1]                   DEFAULT=1 DEFAULTOPTION=VAULT
     VAR BOOL    islmShroomiePictVis[1]                  DEFAULT=0 DEFAULTOPTION=VAULT
     VAR BOOL    islmFerryTerminalCratesVis[1]           DEFAULT=0 DEFAULTOPTION=VAULT
     VAR BOOL    islmStepCratesVis[1]                    DEFAULT=0 DEFAULTOPTION=VAULT
     VAR BOOL    islmTeledahnLinkCourtyardVis[1]         DEFAULT=0 DEFAULTOPTION=VAULT
-    VAR BOOL    islmGreatZeroVis[1]                     DEFAULT=0 DEFAULTOPTION=VAULT
+    VAR BOOL    islmGreatZeroVis[1]                     DEFAULT=1 DEFAULTOPTION=VAULT
     VAR BOOL    islmTokotahMeetingsVis[1]               DEFAULT=0 DEFAULTOPTION=VAULT
     VAR BOOL    islmExplosionRun[1]                     DEFAULT=0 DEFAULTOPTION=VAULT
-    VAR BOOL    islmUnderwaterHarborLightsRun[1]        DEFAULT=0 DEFAULTOPTION=VAULT
-    VAR BOOL    islmScreamRun[1]                        DEFAULT=0 DEFAULTOPTION=VAULT
+    VAR BOOL    islmUnderwaterHarborLightsRun[1]        DEFAULT=1 DEFAULTOPTION=VAULT
+    VAR BOOL    islmScreamRun[1]                        DEFAULT=1 DEFAULTOPTION=VAULT
     VAR BOOL    islmTeledahnLinkLibraryExteriorVis[1]   DEFAULT=0 DEFAULTOPTION=VAULT
     VAR BOOL    islmFerryDoorFunc[1]                    DEFAULT=1 DEFAULTOPTION=VAULT
     VAR BOOL    islmCanyonConstructionVis[1]            DEFAULT=0 DEFAULTOPTION=VAULT
@@ -181,7 +181,7 @@ STATEDESC city
     # Age Mechanics
     VAR BOOL    islmLibraryLowerDoorClosed[1]       DEFAULT=1
     VAR BOOL    islmMuseumDoorClosed[1]             DEFAULT=1
-    VAR BOOL    islmMuseumDoorFunc[1]               DEFAULT=0 DEFAULTOPTION=VAULT
+    VAR BOOL    islmMuseumDoorFunc[1]               DEFAULT=1 DEFAULTOPTION=VAULT
     VAR BYTE    islmMuseumDoorOps[1]                DEFAULT=0
 
     #GZ Marker visibility
