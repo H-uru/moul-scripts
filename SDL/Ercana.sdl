@@ -139,3 +139,10 @@ STATEDESC Ercana
     VAR BOOL	ercaGotSaveCloth6[1]    DEFAULT=0 DISPLAYOPTION=red
     VAR BOOL	ercaGotSaveCloth7[1]    DEFAULT=0 DISPLAYOPTION=red
 }
+
+STATEDESC ercaOvenScope
+{
+    VERSION 1
+    VAR INT    boolOperated[1]
+    VAR INT    OperatorID[1]
+}
