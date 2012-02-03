@@ -120,7 +120,7 @@ stupidHackForLock = None
 kPublicBooks = ("Nexus", "Cleft", "City") #These books cannot be linked to by guests, and cannot be deleted by the owner
 
 # list of ages that show up in the city book
-CityBookAges = { "BaronCityOffice": ["BaronCityOffice", "Default"], "Descent": ["dsntShaftFall"], "GreatZero": ["grtzGrtZeroLinkRm"], "spyroom": ["Spyroom", "Default"], "Kveer": ["Kveer", "Default"]}
+CityBookAges = { "BaronCityOffice": ["BaronCityOffice", "Default"], "Descent": ["dsntShaftFall"], "spyroom": ["Spyroom", "Default"], "Kveer": ["Kveer", "Default"]}
 
 
 class psnlBookshelf(ptModifier):

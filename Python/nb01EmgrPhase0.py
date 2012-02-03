@@ -66,9 +66,6 @@ sdlEderToggle = "nb01LinkBookEderToggle"
 sdlEderGlass = "nb01StainedGlassEders"
 byteEderGlass = 0
 AgeStartedIn = None
-sdlGZGlass = "nb01StainedGlassGZ"
-byteGZGlass = 0
-numGZGlasses = 3
 
 
 ###########################################
@@ -167,21 +164,9 @@ class nb01EmgrPhase0(ptResponder):
             byteEderGlass = ageSDL[sdlEderGlass][0]
             print "nb01EmgrPhase0.OnServerInitComplete(): byteEderGlass = ",byteEderGlass
 
-            ageSDL.setFlags(sdlGZGlass,1,1)
-            ageSDL.sendToClients(sdlGZGlass)
-            ageSDL.setNotify(self.key,sdlGZGlass,0.0)
-            byteGZGlass = ageSDL[sdlGZGlass][0]
-            print "nb01EmgrPhase0.OnServerInitComplete(): byteGZGlass = ",byteGZGlass
-
             if self.sceneobject.isLocallyOwned():
                 print "nb01EmgrPhase0.OnServerInitComplete(): will check the Eder Delin/Tsogal book and its stained glass..."
                 self.IManageEders()
-
-            if ((byteGZGlass > numGZGlasses) or not byteGZGlass) and self.sceneobject.isLocallyOwned():
-                newGlass = xRandom.randint(1,numGZGlasses)
-                print "nb01EmgrPhase0.OnServerInitComplete():  GZ stained glass randomly picked to be #: ",newGlass
-                ageSDL = PtGetAgeSDL()
-                ageSDL[sdlGZGlass] = (newGlass, )
             
             for variable in BooleanVARs:
                 ageSDL.setNotify(self.key,variable,0.0)

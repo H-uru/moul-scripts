@@ -47,6 +47,7 @@ STATEDESC Nexus
     VAR INT     MaxCityPop[1]           DEFAULT=20      DEFAULTOPTION=VAULT
     VAR BOOL    nxusCityLinksVis[1]     DEFAULT=1       DEFAULTOPTION=VAULT
     VAR BOOL    nxusShowGZ[1]           DEFAULT=1       DEFAULTOPTION=VAULT
+    VAR INT     MaxGZPop[1]             DEFAULT=100     DEFAULTOPTION=VAULT
     VAR INT     MaxPubPop[1]            DEFAULT=100     DEFAULTOPTION=VAULT
     VAR BOOL    nxusShowPub[1]          DEFAULT=1       DEFAULTOPTION=VAULT
     VAR INT     MaxKirelPop[1]          DEFAULT=100     DEFAULTOPTION=VAULT
