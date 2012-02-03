@@ -154,6 +154,6 @@ STATEDESC Teledahn
     VAR BOOL    tldnSlaveActivePlate06[1]   DEFAULT=0 DISPLAYOPTION=red
     VAR BOOL    tldnSlaveActivePlate07[1]   DEFAULT=0 DISPLAYOPTION=red
 
-    VAR BOOL    tldnSlaveCaveSecretDoorVis[1]   DEFAULT=0 DEFAULTOPTION=VAULT
+    VAR BOOL    tldnSlaveCaveSecretDoorVis[1]   DEFAULT=1 DEFAULTOPTION=VAULT
     VAR BOOL    tldnSlaveCaveSecretDoorOpen[1]  DEFAULT=0 DEFAULTOPTION=red
 }
