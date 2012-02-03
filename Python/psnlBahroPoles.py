@@ -830,7 +830,6 @@ class psnlBahroPoles(ptModifier):
                 self.RunState(age, 0, 0)
             else:
                 self.SetCurrentState(age, 1)
-                self.RunState(age, 1, 0)
 
         if self.Poles[age]["State"] == 2:
             progress = self.GetJCProgress(age)
