@@ -223,6 +223,7 @@ kHiddenAgesIfInvited = ["BahroCave", "PelletBahroCave", "Pellet Cave", "LiveBahr
 kAgeSdlVariables = {
 'city' : ('MaxCityPop', 'nxusCityLinksVis'),
 'GreatTreePub' : ('MaxPubPop', 'nxusShowPub'),
+'GreatZero' : ('MaxGZPop', 'nxusShowGZ'),
 'guildPub' : ('MaxGuildPubPop', None),
 'Neighborhood02' : ('MaxKirelPop', 'nxusShowKirel'),
 'Kveer' : ('MaxKveerPublicPop', None),
@@ -242,6 +243,7 @@ kHardcodedInstances = {"GuildPub-Cartographers" : "35624301-841e-4a07-8db6-b735c
 kPublicAgesDescription = {
      'city' : ("Nexus.Messages.CityFull", "Nexus.Messages.CityPopulation"),
      'GreatTreePub' : ("Nexus.Messages.PubFull", "Nexus.Messages.PubPopulation"),
+     'GreatZero' : ("Nexus.Messages.CityFull", "Nexus.Messages.CityPopulation"),
      'Neighborhood02' : ("Nexus.Messages.KirelFull", "Nexus.Messages.KirelPopulation"),
      'GuildPub-Cartographers' : ("Nexus.Messages.GuildPubFull", "Nexus.Messages.GuildPubPopulation"),
      'GuildPub-Greeters' : ("Nexus.Messages.GuildPubFull", "Nexus.Messages.GuildPubPopulation"),
@@ -361,6 +363,7 @@ class nxusBookMachine(ptModifier):
         self.publicAges = {
             'city' : AgeData(ageFilename = 'city', defaultMaxPop = 20, linkVisible = 1),
             'GreatTreePub' : AgeData(ageFilename = 'GreatTreePub', defaultMaxPop = 100, linkVisible = 0),
+            'GreatZero' : AgeData(ageFilename = 'GreatZero', defaultMaxPop = 100, linkVisible = 1),
             'guildPub' : AgeData(ageFilename = '', defaultMaxPop = 100, linkVisible = 0),
             'Neighborhood02' : AgeData(ageFilename = 'Neighborhood02', defaultMaxPop = 100, linkVisible = 0),
             'Kveer' : AgeData(ageFilename = 'Kveer', defaultMaxPop = 100, linkVisible = 0),
@@ -1298,6 +1301,20 @@ class nxusBookMachine(ptModifier):
             newEntry = LinkListEntry(displayName, stringLinkInfo, U"", canDelete, None)
             newEntry.setLinkStruct(publicCityData.ageInfo, spawnPoint) #create link to instance, set spawnPoint
             yield newEntry
+    
+    def IGetGZEntries(self):
+        vault = ptVault()
+        
+        # Try to get the GZ link. Hope it works!
+        publicGzData = self.publicAges['GreatZero'].selected
+        playerGzLink = vault.getOwnedAgeLink(publicGzData.ageInfo)
+        if playerGzLink:
+            stringLinkInfo = self.IFormatGZCreateCoords(playerGzLink)
+            spawnPoints = playerGzLink.getSpawnPoints()
+            for spawnPoint in spawnPoints:
+                newEntry = LinkListEntry(spawnPoint.getTitle(), stringLinkInfo, U"", False, None)
+                newEntry.setLinkStruct(publicGzData.ageInfo, spawnPoint)
+                yield newEntry
 
     def IUpdateCityLinksList(self):
         self.IChoosePublicInstances() #make sure, that we selected prefered instances
@@ -1323,6 +1340,14 @@ class nxusBookMachine(ptModifier):
             #special case: Ae'gura multiple link points
             if ageData.ageFilename == 'city':
                 for entry in self.IGetAeguraEntries():
+                    entry.description = description
+                    entry.isEnabled = entryEnabled
+                    cityLinks.append(entry)
+                continue
+            
+            #special case: show all link points for Great Zero
+            elif ageData.ageFilename == 'GreatZero':
+                for entry in self.IGetGZEntries():
                     entry.description = description
                     entry.isEnabled = entryEnabled
                     cityLinks.append(entry)
@@ -1362,39 +1387,6 @@ class nxusBookMachine(ptModifier):
 
         self.categoryLinksList[kCategoryPublic] = hoodLinks
 
-    def IGetGZLinkNode(self):
-        childAgeFolder = self.IGetHoodInfoNode().getChildAgesFolder()
-        contents = childAgeFolder.getChildNodeRefList()
-        for content in contents:
-            link = content.getChild()
-            link = link.upcastToAgeLinkNode()
-            name = link.getAgeInfo().getAgeFilename()
-            if name.lower() == "greatzero":
-                return link
-        return None # not found
-
-    def IGetGZLinks(self):
-        if PtDetermineKIMarkerLevel() <= kKIMarkerFirstLevel:
-            # if our KI level is too low (we didn't grab markers), don't show anything
-            PtDebugPrint("nxusBookMachine.IUpdateLinks:\tHiding all GZ spawn points because you haven't found the markers yet")
-            return
-
-        GZLinkNode = self.IGetGZLinkNode()
-        if GZLinkNode is None:
-            PtDebugPrint("nxusBookMachine.IGetGZLinks:\tCouldn't find GZ link node, preventing it from showing")
-        elif self.showGreatZero: # even if the link exists, don't show it if the vault says no
-            GZSpawnpoints = GZLinkNode.getSpawnPoints()
-
-            for spawnPoint in GZSpawnpoints: # [:] makes a copy of the list, so we can modify the original
-                displayName = spawnPoint.getTitle()
-                stringLinkInfo = self.IFormatGZCreateCoords(GZLinkNode)
-                if 'default' in displayName.lower() or 'default' in spawnPoint.getName().lower():
-                    continue # we hide the default spawn point, since they don't want it showing in our list
-                else:
-                    entry = LinkListEntry(displayName, stringLinkInfo)
-                    entry.setChildAgeLinkStruct(GZLinkNode.getAgeInfo(), 'Neighborhood', spawnPoint) #create link to child age
-                    yield entry
-
     def IUpdatePrivateLinksList(self):
         vault = ptVault()
         folder = vault.getAgesICanVisitFolder()
@@ -1406,8 +1398,6 @@ class nxusBookMachine(ptModifier):
         vault = ptVault()
 
         personalList = list()
-        if self.showGreatZero:
-            personalList.extend(self.IGetGZLinks())
         folder = vault.getAgesIOwnFolder()
         personalList.extend(self.IGetAgesFromFolder(folder, kHiddenPersonalAges, False))
         self.categoryLinksList[kCategoryPersonal] = personalList

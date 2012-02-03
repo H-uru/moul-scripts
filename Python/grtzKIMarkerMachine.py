@@ -454,32 +454,9 @@ class grtzKIMarkerMachine(ptModifier):
                 aKILightsResp.run(self.key,state='LightOn',objectName=gLightRespNames[idx])
         PtAtTimeCallback(self.key, kLightsOffSeconds, kLightsOffDelayID)
 
-    def IGetHoodLinkNode(self):
-        vault = ptVault()
-        folder = vault.getAgesIOwnFolder()
-        contents = folder.getChildNodeRefList()
-        for content in contents:
-            link = content.getChild()
-            link = link.upcastToAgeLinkNode()
-            if type(link) != type(None):
-                info = link.getAgeInfo()
-            if not info: continue
-            ageName = info.getAgeFilename()
-            if ageName == "Neighborhood":
-                return link
-        return None
-    
-    def IGetHoodInfoNode(self):
-        link = self.IGetHoodLinkNode()
-        if type(link) == type(None):
-            return None
-        info = link.getAgeInfo()
-        return info
-
     def IUpdateNexusLink(self):
-        childAgeFolder = self.IGetHoodInfoNode().getChildAgesFolder()
-        contents = childAgeFolder.getChildNodeRefList()
-        for content in contents:
+        agesiown = ptVault().getAgesIOwnFolder()
+        for content in agesiown.getChildNodeRefList():
             link = content.getChild()
             link = link.upcastToAgeLinkNode()
             name = link.getAgeInfo().getAgeFilename()

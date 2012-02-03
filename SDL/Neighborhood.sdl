@@ -77,7 +77,7 @@ STATEDESC Neighborhood
     VAR BOOL    nb01LinkBookEderVis[1]                  DEFAULT=0 DEFAULTOPTION=VAULT
     VAR BYTE    nb01LinkBookEderToggle[1]               DEFAULT=1 DEFAULTOPTION=VAULT
     VAR BOOL    nb01LinkBookGarrisonVis[1]              DEFAULT=1 DEFAULTOPTION=VAULT
-    VAR BOOL    nb01LinkBookGZVis[1]                    DEFAULT=1 DEFAULTOPTION=VAULT
+    VAR BOOL    nb01LinkBookGZVis[1]                    DEFAULT=0 DEFAULTOPTION=VAULT
     VAR BOOL    nb01LinkRoomDoorFunc[1]                 DEFAULT=1 DEFAULTOPTION=VAULT
     VAR BOOL    nb01RatCreatureVis[1]                   DEFAULT=0 DEFAULTOPTION=VAULT
     VAR BOOL    nb01TelescopeVis[1]                     DEFAULT=1 DEFAULTOPTION=VAULT

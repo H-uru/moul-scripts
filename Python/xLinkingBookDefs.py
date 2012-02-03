@@ -309,7 +309,6 @@ xLinkDestinations = {\
     "Dereno":     		  ( "Dereno", "LinkInPointDefault" ),
     "Payiferen":     		  ( "Payiferen", "LinkInPointDefault" ),
     "Tetsonot":     		  ( "Tetsonot", "LinkInPointDefault" ),
-    "grtzGrtZeroLinkRm":        ( "GreatZero", "LinkInPointDefault" ),
     "Minkata":        		  ( "Minkata", "LinkInPointDefault" ),
     "Jalak":        		  ( "Jalak", "LinkInPointDefault" ),
     "Myst":        		  ( "Myst", "LinkInPointDefault" ),
