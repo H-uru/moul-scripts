@@ -215,7 +215,7 @@ kLinkPanels = {
 }
 
 
-kHiddenPersonalAges = ["Personal", "Nexus", "Neighborhood", "city", "AvatarCustomization", "Cleft", "BaronCityOffice", "BahroCave", "PelletBahroCave", "Kveer", "Myst", "LiveBahroCaves", "LiveBahroCave"]
+kHiddenPersonalAges = ["Personal", "Nexus", "Neighborhood", "city", "AvatarCustomization", "Cleft", "BaronCityOffice", "BahroCave", "PelletBahroCave", "Kveer", "Myst", "LiveBahroCaves", "LiveBahroCave", "GreatZero"]
 kHiddenCityLinks = ["islmPalaceBalcony03", "KadishGallery", "islmPalaceBalcony02", "islmDakotahRoof", ]
 kHiddenAgesIfInvited = ["BahroCave", "PelletBahroCave", "Pellet Cave", "LiveBahroCave", "LiveBahroCaves", "Myst"]
 
