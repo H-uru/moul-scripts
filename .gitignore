@@ -1,3 +1,7 @@
 *.pyc
 *.pyo
 .*.swp
+*.prp
+*.loc
+*.csv
+*.p2f
