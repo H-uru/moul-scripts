@@ -1,0 +1,6 @@
+StartDateTime=0000000000
+DayLength=24
+MaxCapacity=50
+SequencePrefix=200
+ReleaseVersion=2
+Page=visitorlink,0
